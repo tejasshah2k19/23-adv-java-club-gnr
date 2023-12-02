@@ -1,0 +1,94 @@
+file -> new -> dynamic web project -> 
+				webmodule version -> 2.5 -> finish 
+				
+folder structures -> 
+	html/jsp/img/css/js/audio/vedio -> webapp
+	
+	logic -> controller -> servlet  
+	
+-----------------------------------------------------
+html -> webapp -> right click -> html {other html } ->
+				Signup.html -> finish 
+	
+	action => server side who request accept  -> process -> response  ?
+	method = post = hidden 
+================================================
+
+facebook -> Signup.htm { fn ln em pwd } submit 
+				request -> server -> SignupServlet
+						process -> response 
+						  
+				read data 
+				validation -> error 
+				store database 
+				response -> login 
+
+client-> request ---> server ---> response 
+					  Servlet 
+
+
+=================================================
+class A  extends Thread{
+	public void run(){
+		//logic 
+	}
+}
+
+how to creaet servlet? 
+three steps 
+		1) class extends HttpServlet 
+		2) public void service(HttpServletRequest request,HttpServletResponse response) 
+		3) @WebServlet("/XX") servlet mapping - url 	
+
+where i create my servlet class? inside controller  
+	inside src/main/java-> 
+	{src} 
+	
+	
+	src/com/controller/
+		or
+	src/main/java/com/controller/
+
+
+//lib --> .jar {}
+
+//500 pic -> 500MB -> zip 
+
+//X Y Z A B => .jar  => api 
+
+
+//jre -> rt.jar , src.zip-> java. System SCanner String Math Exception Thread 
+
+//1) tomcat 
+//2) internet
+
+
+how to link servlet-api.jar in web project?
+project->right click ->properties -> java build path -> libraries tab->
+ add external jar->
+->browse tomcat / lib / servlet-api.jar -> open -> order and export tab -> 
+select all -> 
+	apply and close . 
+		
+		
+		 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 			
