@@ -20,10 +20,15 @@ public class AddServlet extends HttpServlet {
 		String error = "";
 		boolean isError = false;
 
+		String regExDigit = "[0-9]+";
 		// validation
 		if (no1 == null || no1.trim().length() == 0) {
 			isError = true;
 			error = "Please Enter No1<br>";
+		}else if(no1.matches(regExDigit) == false ) {
+			isError = true;
+			error = "Please Enter Valid No1<br>";
+			
 		}
 
 		if (no2 == null || no2.trim().length() == 0) {
@@ -44,12 +49,14 @@ public class AddServlet extends HttpServlet {
 
 			out.print("<html>");
 			out.print("<body>");
+			out.print("<font color='red'>");
 			out.print(error);
+			out.print("</font>");
 			out.print("</body>");
 			out.print("</html>");
 		} else {
 
-			int x = Integer.parseInt(no1);
+			int x = Integer.parseInt(no1);//ram 
 			int y = Integer.parseInt(no2);
 			int ans = 0;
 
