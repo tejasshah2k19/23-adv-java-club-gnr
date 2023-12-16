@@ -9,29 +9,70 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/AddServlet")
-public class AddServlet extends HttpServlet{
+public class AddServlet extends HttpServlet {
 
-	public void service(HttpServletRequest request,HttpServletResponse response)throws IOException {
-		
-		String no1 = request.getParameter("no1");
-		String no2 = request.getParameter("no2");
-		String opr = request.getParameter("opr"); 
-		
-		int x = Integer.parseInt(no1);
-		int y = Integer.parseInt(no2);
-		
-		int ans = x + y ; 
-		
-		response.setContentType("text/html"); 
-		
-		PrintWriter out = response.getWriter();
-		
-		out.print("<html>");
-		out.print("<body>");
-		out.print("Addition = "+ans);
-		out.print("</body>");
-		out.print("</html>");
-		
-		
+	public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+		String no1 = request.getParameter("no1");// 10
+		String no2 = request.getParameter("no2");//
+		String opr = request.getParameter("opr");// blank null
+
+		String error = "";
+		boolean isError = false;
+
+		// validation
+		if (no1 == null || no1.trim().length() == 0) {
+			isError = true;
+			error = "Please Enter No1<br>";
+		}
+
+		if (no2 == null || no2.trim().length() == 0) {
+			isError = true;
+			error = error + "Please Enter No2<br>";
+		}
+
+		if (opr == null) {
+			isError = true;
+			error = error + "Please Select Operation<br>";
+
+		}
+
+		if (isError == true) {
+			response.setContentType("text/html");
+
+			PrintWriter out = response.getWriter();
+
+			out.print("<html>");
+			out.print("<body>");
+			out.print(error);
+			out.print("</body>");
+			out.print("</html>");
+		} else {
+
+			int x = Integer.parseInt(no1);
+			int y = Integer.parseInt(no2);
+			int ans = 0;
+
+			if (opr.equals("add")) {
+				ans = x + y;
+			} else if (opr.equals("sub")) {
+				ans = x - y;
+			} else if (opr.equals("div")) {
+
+				ans = x / y;
+			} else if (opr.equals("mul")) {
+
+				ans = x * y;
+			}
+			response.setContentType("text/html");
+
+			PrintWriter out = response.getWriter();
+
+			out.print("<html>");
+			out.print("<body>");
+			out.print("Ans = " + ans);
+			out.print("</body>");
+			out.print("</html>");
+		}
 	}
 }
