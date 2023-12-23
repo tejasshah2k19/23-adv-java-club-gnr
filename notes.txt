@@ -70,8 +70,23 @@ project->right click ->properties -> java build path -> libraries tab->
 select all -> 
 	apply and close . 
 		
-		
+----------------------------------------------------
+jsp/servlet -> jee j2EE technology 
+
+servlet -> is a java class 
+				which extends HttpServlet
+				controller -> logic 
+				request -> process -> response  		
 		 
+-----------------------------------------------------
+
+
+input --> request --> server --> process -> response 
+
+
+input => process => output
+
+.html => servlet => PrintWriter  
 
 
 

@@ -21,6 +21,7 @@ public class AddServlet extends HttpServlet {
 		boolean isError = false;
 
 		String regExDigit = "[0-9]+";
+		
 		// validation
 		if (no1 == null || no1.trim().length() == 0) {
 			isError = true;
