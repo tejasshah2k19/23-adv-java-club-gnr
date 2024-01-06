@@ -88,6 +88,20 @@ input => process => output
 
 .html => servlet => PrintWriter  
 
+------------------------------------------
+SERVLET 
+JSP
+
+
+JSP -> java server pages 
+	   java servlet pages 
+	    
+HTML -> JSP why?  HTML + JAVA 
+
+JSP 
+----------------------------------------------
+
+
 
 
 
