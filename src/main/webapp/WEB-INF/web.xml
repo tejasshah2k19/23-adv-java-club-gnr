@@ -9,4 +9,14 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>PSignupServlet</display-name>
+    <servlet-name>PSignupServlet</servlet-name>
+    <servlet-class>com.controller.PSignupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PSignupServlet</servlet-name>
+    <url-pattern>/PSignupServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
