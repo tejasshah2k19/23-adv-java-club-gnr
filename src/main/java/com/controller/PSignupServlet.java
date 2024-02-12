@@ -13,7 +13,7 @@ import com.bean.UserBean;
 
 public class PSignupServlet extends HttpServlet {
 
-	ArrayList<UserBean> listUsers = new ArrayList<>();
+public	static ArrayList<UserBean> listUsers = new ArrayList<>();
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

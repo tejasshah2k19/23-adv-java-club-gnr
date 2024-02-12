@@ -19,4 +19,14 @@
     <servlet-name>PSignupServlet</servlet-name>
     <url-pattern>/PSignupServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PSearchServlet</display-name>
+    <servlet-name>PSearchServlet</servlet-name>
+    <servlet-class>com.controller.PSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PSearchServlet</servlet-name>
+    <url-pattern>/PSearchServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
