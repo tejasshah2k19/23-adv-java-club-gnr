@@ -101,7 +101,8 @@ HTML -> JSP why?  HTML + JAVA
 JSP 
 ----------------------------------------------
 
-
+cookie -> 
+			value | data  => store 
 
 
 
