@@ -1,0 +1,41 @@
+create database 24advgnrclub; 
+
+
+use 24advgnrclub;
+
+
+singup -> 
+		firstName
+		lastName
+		email 
+		password 
+		
+
+create table users (
+	userId int primary key auto_increment ,
+	firstName varchar(30),
+	lastName varchar(30),
+	email varchar(30),
+	password varchar(30)
+); 
+
+
+show tables; 
+
+desc users; 
+
+----------------------------------------------------------------
+
+insert into users (firstName,lastName,email,password) 
+	values ('rock','patel','rock@gmail.com','secret123');
+
+-----------------------------------------------------------------
+
+
+
+
+
+
+
+
+		
