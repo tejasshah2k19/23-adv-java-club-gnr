@@ -106,7 +106,23 @@ cookie ->
 
 
 
+--------------------------------------------------
+JDBC ->
 
+driver -> 
+
+jdbc api -> class -> use  
+
+
+JAVA--> DB 
+
+connection open 
+
+execute query 
+
+
+
+1) driver -> mysql -> mysql-connector.jar 
 
 
 
