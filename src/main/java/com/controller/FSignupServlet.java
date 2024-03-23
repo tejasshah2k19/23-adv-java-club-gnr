@@ -3,6 +3,7 @@ package com.controller;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -38,19 +39,33 @@ public class FSignupServlet extends HttpServlet {
 		String dbPassword = "root";
 
 		try {
-			//db driver 
-			//load 
-			Class.forName(driver); //type 3
+			// db driver
+			// load
+			Class.forName(driver); // type 3 --> load
 			Connection con = DriverManager.getConnection(url, dbUserName, dbPassword);
+
 			if (con != null) {
 				System.out.println("dBconnected...");
 				// insert query
+
+				PreparedStatement pstmt = con
+						.prepareStatement("insert into users (firstName,lastName,email,password) values (?,?,?,?)");
+
+				pstmt.setString(1, firstName);
+				pstmt.setString(2, lastName);
+				pstmt.setString(3, email);
+				pstmt.setString(4, password);
+
+				// run->
+				int record = pstmt.executeUpdate();
+
+				System.out.println(record + " inserted....");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
-		// redirect login	
+		// redirect login
 		response.sendRedirect("FLogin.jsp");
 
 	}

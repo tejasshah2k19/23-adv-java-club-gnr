@@ -128,13 +128,21 @@ execute query
 
 
 
+-> mysql 
+
+-> mysql connector : driver -> vendor ->  
+
+-> connection -> database? 
+
+create database vd; 
 
 
 
 
 
 
-
-
-
+ 			
+ 			
+ 			
+ 			
  			
