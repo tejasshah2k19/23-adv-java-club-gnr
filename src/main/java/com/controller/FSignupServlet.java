@@ -57,7 +57,7 @@ public class FSignupServlet extends HttpServlet {
 				pstmt.setString(4, password);
 
 				// run->
-				int record = pstmt.executeUpdate();
+				int record = pstmt.executeUpdate();//insert or delete or update 
 
 				System.out.println(record + " inserted....");
 			}
@@ -66,7 +66,7 @@ public class FSignupServlet extends HttpServlet {
 		}
 
 		// redirect login
-		response.sendRedirect("FLogin.jsp");
+		response.sendRedirect("Findex.jsp");
 
 	}
 }

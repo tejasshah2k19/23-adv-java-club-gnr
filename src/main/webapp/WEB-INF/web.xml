@@ -39,4 +39,14 @@
     <servlet-name>CLoginServlet</servlet-name>
     <url-pattern>/CLoginServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FListUserServlet</display-name>
+    <servlet-name>FListUserServlet</servlet-name>
+    <servlet-class>com.controller.FListUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FListUserServlet</servlet-name>
+    <url-pattern>/FListUserServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
