@@ -21,6 +21,7 @@
 			<th>FirstName</th>
 			<th>LastName</th>
 			<th>Email</th>
+			<th>Action</th>
 		</tr>
 
 		<%
@@ -35,6 +36,7 @@
 			<td><%=firstName%></td>
 			<td><%=lastName%></td>
 			<td><%=email%></td>
+			<td><a href="DeleteUserServlet?userId=<%=userId%>">Delete</a></td>
 		</tr>
 
 		<%
