@@ -137,9 +137,38 @@ execute query
 create database vd; 
 
 
+---------------------------------------------------------------------
 
 
 
+
+
+AddProduct.jsp 
+		
+			ProductName 
+			
+			Price 
+
+					[submit] 
+					
+AddProductServlet 
+		getParameter 
+		validation 
+			name and price - must be present 
+		DbInsert product 
+		ProductList as response 
+		
+------------------------------------------------------------------------		
+		filter -> pre process 
+		
+		whatsapp -> image -> compressor -> send to server ->  	
+					
+					
+		1) class implements Filter 
+		2) doFilter init destroy 			
+		3) url pattern 			
+					
+					
 
  			
  			
