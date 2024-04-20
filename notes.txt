@@ -168,10 +168,43 @@ AddProductServlet
 		2) doFilter init destroy 			
 		3) url pattern 			
 					
-					
+------------------------------------------------
+user information ->	
+		session 
+		cookie 
+		
+		session->server side - secure privacy security 
+		cookie->client side - browser 				
 
  			
- 			
+------------------------------------------------
+
+user -> server -> session
+user -> server ->  already -> 
+userx-> server -> session 
+userx-> server -> alreday -> 
+ 
+
+session create count ++ 
+session destroy count -- 
+
+
+listener -> listen -> event -> 
+--------------------------------------------------------------
+
+1) class implements Listener 
+2) class -> mapping web.xml 
+
+-------------------------------------------------------------
+
+
+
+
+
+
+
+
+		
  			
  			
  			
