@@ -198,9 +198,34 @@ listener -> listen -> event ->
 -------------------------------------------------------------
 
 
+JSTL - java standard tag lib  
+	1)core****** 
+	2)sql 
+	3)xml 
+	4)format 
+	XXX
+	XX
+		
+<b></b> 
+<i>
+<s>
+ 
+jsp -> own tag -> java -> 
 
+	<%if()%> 
+	<if> 
+	<forEach> 
+	<catch>
+	<case>
+	<out>
+	<set>
+	<remove>
+	
+	
+1) lib -> download -> maven 
+2) jsp import -> taglib {tld} 
 
-
+------------------------------------------------------------------------------------
 
 
 
